@@ -38,12 +38,12 @@ namespace TicTacToe.UITests
             app.Screenshot("First screen.");
             Assert.IsFalse(app.Query("StartGameButton").First().Enabled, "Button should not be enabled");
 
-            app.EnterText("Player1", "James");
+            app.EnterText("Player1", "Mauro");
             app.DismissKeyboard();
             app.Screenshot("Entered Player 1.");
             Assert.IsFalse(app.Query("StartGameButton").First().Enabled, "Button should not be enabled");
 
-            app.EnterText("Player2", "Heather");
+            app.EnterText("Player2", "Andres");
             app.DismissKeyboard();
 
             app.Screenshot("Entered Player 2.");
@@ -55,8 +55,8 @@ namespace TicTacToe.UITests
         public void PlayGame()
         {
             app.Screenshot("First screen.");
-            app.EnterText("Player1", "Heather");
-            app.EnterText("Player2", "James");
+            app.EnterText("Player1", "Mauro");
+            app.EnterText("Player2", "Andres");
             app.DismissKeyboard();
             app.Screenshot("Name Entered.");
             app.Tap("StartGameButton");
@@ -82,7 +82,7 @@ namespace TicTacToe.UITests
 
             app.Screenshot("Play 5.");
 
-            app.WaitForElement("Heather Wins!");
+            app.WaitForElement("Andres!");
 
             app.Screenshot("Win dialog up.");
         }
