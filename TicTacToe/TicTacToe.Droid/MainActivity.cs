@@ -28,7 +28,7 @@ namespace TicTacToe.Droid
             base.OnCreate (bundle);
 
 			Forms.Init (this, bundle);
-            AppCenter.Start("4e3c9310-9aec-4414-b0f6-0557e326cada");
+            AppCenter.Start("2a162362-67d3-4f51-8f06-48695ee22242");
             LoadApplication (new App ());
 
             UserDialogs.Init(this);
