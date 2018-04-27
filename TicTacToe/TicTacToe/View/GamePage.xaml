@@ -25,7 +25,7 @@
                 BackgroundColor="#A9A9A9" 
                 TextColor="White"
                 Text="{Binding Play0}"
-                FontSize="40"
+                FontSize="38"
                 Command="{Binding PlayCommand}"
                 CommandParameter="0"
                 AutomationId="Play0"/>
