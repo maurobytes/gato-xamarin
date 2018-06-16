@@ -123,7 +123,8 @@
                Margin="10"
                HorizontalOptions="Center"
                Text="{Binding CurrentStatus}"
-               AutomationId="CurrentStatus"/>
+               AutomationId="CurrentStatus"
+               FontSize="20"/>
 
         <Button
                Grid.Row="4"
